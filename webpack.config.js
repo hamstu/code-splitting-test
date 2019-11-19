@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const { resolve, join } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 
@@ -26,7 +26,7 @@ module.exports = {
     contentBase: './dist',
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: '[Test] Lazy Loading',
       template: './src/index.html',
