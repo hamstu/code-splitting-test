@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-const LazyComponent = lazy(() => import('./components/LazyComponent'));
+const LazyComponent = lazy(() => import(/* webpackChunkName: 'lazy-component' */'./components/LazyComponent'));
 
 function App() {
   const [showLazy, setShowLazy] = useState(false);
