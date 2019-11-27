@@ -2,7 +2,7 @@
 
 Testing code splitting / lazy loading in a React app.
 
-# How to run
+## How to run
 
 ```bash
 $ npm i
